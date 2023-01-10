@@ -738,6 +738,10 @@ void NFNetClientModule::LogServerInfo()
 		}
 
         pServerData = mxServerMap.NextNude();
+
+        if(pServerData){
+            stream << std::endl;
+        }
     }
 
     if (error)
