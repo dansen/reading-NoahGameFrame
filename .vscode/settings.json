@@ -83,7 +83,8 @@
         "typeindex": "cpp",
         "complex": "cpp",
         "variant": "cpp",
-        "clocale": "cpp"
+        "clocale": "cpp",
+        "xstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

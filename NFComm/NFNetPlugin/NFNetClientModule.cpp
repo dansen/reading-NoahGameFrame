@@ -724,12 +724,13 @@ void NFNetClientModule::LogServerInfo()
 {
 	bool error = false;
 	std::ostringstream stream;
-	stream << "This is a client, begin to print Server Info-------------------" << std::endl;
 
     ConnectData* pServerData = mxServerMap.FirstNude();
+
     while (nullptr != pServerData)
     {
-        stream << "Type: " << pServerData->eServerType << " Server ID: " << pServerData->nGameID << " State: " << pServerData->eState << " IP: " << pServerData->ip << " Port: " << pServerData->nPort;
+        stream << "Type: " << pServerData->eServerType << " Server ID: " << pServerData->nGameID << " State: " 
+            << ConnectDataStateToString(pServerData->eState) << " IP: " << pServerData->ip << " Port: " << pServerData->nPort;
 
 		if (pServerData->eState != ConnectDataState::NORMAL)
 		{
@@ -738,8 +739,6 @@ void NFNetClientModule::LogServerInfo()
 
         pServerData = mxServerMap.NextNude();
     }
-
-	stream << "This is a client, end to print Server Info---------------------" << std::endl;
 
     if (error)
 	{

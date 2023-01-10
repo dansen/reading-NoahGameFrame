@@ -126,11 +126,11 @@ bool NFScheduleModule::Execute()
 
 	if (performanceObject.CheckTimePoint(1))
 	{
-		std::ostringstream os;
-		os << "---------------module schedule performance problem ";
-		os << performanceObject.TimeScope();
-		os << "---------- ";
-		m_pLogModule->LogWarning(NFGUID(), os, __FUNCTION__, __LINE__);
+		// std::ostringstream os;
+		// os << "---------------module schedule performance problem ";
+		// os << performanceObject.TimeScope();
+		// os << "---------- ";
+		//m_pLogModule->LogWarning(NFGUID(), os, __FUNCTION__, __LINE__);
 	}
 
 	return true;

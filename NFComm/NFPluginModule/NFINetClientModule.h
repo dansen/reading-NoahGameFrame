@@ -40,6 +40,25 @@ enum ConnectDataState
     RECONNECT,
 };
 
+static std::string ConnectDataStateToString(ConnectDataState eState)
+{
+    switch (eState)
+    {
+    case ConnectDataState::DISCONNECT:
+        return "DISCONNECT";
+    case ConnectDataState::CONNECTING:
+        return "CONNECTING";
+    case ConnectDataState::NORMAL:
+        return "NORMAL";
+    case ConnectDataState::RECONNECT:
+        return "RECONNECT";
+    default:
+        break;
+    }
+
+    return "DISCONNECT";
+}
+
 struct ConnectData
 {
 	ConnectData()

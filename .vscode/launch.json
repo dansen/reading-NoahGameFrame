@@ -8,7 +8,7 @@
         
         {
             "name": "GameServer",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/Debug/NFServer",
@@ -18,11 +18,10 @@
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
         {
             "name": "WorldServer",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/Debug/NFServer",
@@ -32,11 +31,10 @@
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
         {
             "name": "ProxyServer",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/Debug/NFServer",
@@ -46,11 +44,10 @@
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
         {
             "name": "DBServer",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/Debug/NFServer",
@@ -60,11 +57,10 @@
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
         {
             "name": "MasterServer",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/Debug/NFServer",
@@ -74,33 +70,29 @@
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
         {
             "name": "LoginServer",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/Debug/NFServer",
-            "args": ["Server=LoginServer", "ID=4", "Plugin=Plugin.xml"],
+            "args": ["Server=LoginServer", "ID=10", "Plugin=Plugin.xml"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}/_Out/Debug/",
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
         {
             "name": "ATTACH TO DEBUG NF",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "attach",
-            "program": "${workspaceFolder}/_Out/Debug/NFServer",
             "processId": "${command:pickProcess}",
-            "MIMode": "lldb"
         },
         {
             "name": "BluePrint",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/Debug/NFServer",
@@ -110,11 +102,10 @@
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
         {
             "name": "FileProcess",
-            "type": "cppdbg",
+            "type": "cppvsdbg",
             "request": "launch",
             //"request": "attach",
             "program": "${workspaceFolder}/_Out/NFDataCfg/Tool/NFFileProcess",
@@ -124,7 +115,6 @@
             "environment": [],
             "externalConsole": true,
             //for mac lldb
-            "MIMode": "lldb"
         },
     ]
 }
